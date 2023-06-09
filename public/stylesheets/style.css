@@ -1,0 +1,205 @@
+footer {
+  background-color: #aaa;
+}
+.formulario {
+  background-color: white;
+}
+
+.fotocontacto{ 
+  height: 3rem;
+  padding-left: 5rem;
+  margin-top: 5rem;
+}
+
+.fotoins {
+  display: flex;
+  height: 3rem;
+}
+
+.fotofb {
+  height: 3rem;
+}
+
+/* .fotocontacto img {
+  display: flex;
+  height: 3rem;
+} */
+
+.go-top-button{
+  width: 0rem;
+  height: 0rem; 
+  background: #924802e1;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.go-top-button:hover{
+  background: #7a3e06;
+}
+
+.go-top-button i{
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: black;
+  transition: 0.2s;
+}
+
+.go-top-container {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  width: .6rem;
+  height: .6rem;
+  z-index: -1;
+}
+
+.hero {
+  background: url(/images/imgtiendamejorada.jpg);
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-size:cover;
+  height: 50vh;
+  min-height: 650px;
+  color: white; 
+}
+
+.imagenes {
+  border: #7a3e06;
+  /* position: relative;
+  left: 1200px;
+  bottom: 350px; */
+}
+
+
+.lanzamientos img {
+  width: 40rem;
+  height: 50rem;
+}
+
+.lista-novedades {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lista-novedades li {
+  margin: 4px;
+}
+
+.lista-novedades li a {
+  background-color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #a0a0a0;
+  transition: all 0.2s ease-in-out;
+  display: block;
+}
+
+.lista-novedades li a:hover {
+  color: #000000;
+  background-color: #884201bd;
+}
+
+.lista-novedades li a img {
+  width: 80px;
+  height: 50px;
+  filter: grayscale();
+  transition: all 0.2s ease-in-out;
+  margin-right: 1rem;
+  opacity: 0.7;
+}
+
+.lista-novedades li a:hover img {
+  filter: none;
+  margin-right: 1.4rem;
+  opacity: 1;
+}
+
+.mapa iframe {
+  width: 100%;
+  aspect-ratio: 1.2;
+}
+
+.show {
+  z-index: 10;
+}
+
+.show .go-top-button{
+  animation: popup 0.3s ease-in-out;
+  width: 3.6rem;
+  height: 3.6rem;
+  z-index: 11;
+}
+
+.show i{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup{
+  0%{
+    width: 0rem;
+    height: 0rem;
+  }
+  50%{
+    width: 6rem;
+    height: 6rem;
+  }
+  100%{
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+}
+
+.staff {
+  background-color: #cfcfcf;
+}
+
+.ul-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 100px;
+}
+
+.ul-hero .li-hero {
+  position: relative;
+  list-style: none;
+}
+
+.ul-hero .li-hero .a-hero {
+  position: relative;
+  font-size: 3em;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 3px rgba(0, 0, 0, 0.884);
+}
+
+.ul-hero .li-hero .a-hero::before {
+  content: attr(data-text);
+  position: absolute;
+  color: var(--clr);
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+  border-right: 8px solid var(--clr);
+  -webkit-text-stroke: 1px var(--clr);
+}
+
+.ul-hero .li-hero .a-hero:hover::before {
+  width: 100%;
+  filter: drop-shadow(0 0 25px var(--clr));
+}

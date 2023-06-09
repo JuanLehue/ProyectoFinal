@@ -1,0 +1,20 @@
+<form action="/admin/login" method="post">
+  <h1 class="title">Login</h1>
+  <label for="usuario">
+    <i class="fa-solid fa-user"></i>
+    <input placeholder="username" type="text" id="usuario" name="usuario" />
+  </label>
+  <label for="password">
+    <i class="fa-solid fa-lock"></i>
+    <input
+      placeholder="password"
+      type="password"
+      id="password"
+      name="password"
+    />
+  </label>
+  {{#if error}}
+    <p>Usuario o contraseña incorrecta!</p>
+  {{/if}}
+  <button type="submit" id="button">Login</button>
+</form>
